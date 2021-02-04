@@ -1,0 +1,19 @@
+<div class="grid-container">
+    <div class="grid-item" style="text-align: right;">
+      <input
+        placeholder="input number"
+        (input)="handleInput()"
+        [(ngModel)]="inputNum"
+      />
+    </div>
+    <div class="grid-item" style="min-width: 100px; text-align: center;">
+      <select [(ngModel)]="typeNum" style="width: 100px;" (change)="handleSelect()">
+        <option value="isPrime">isPrime</option>
+        <option value="isFibonacci">isFibonacci</option>
+      </select>
+    </div>
+    <div class="grid-item" style="text-align: left;">
+      <p *ngIf="typeNum == 'isFibonacci'">{{fibonacci}}</p>
+      <p *ngIf="typeNum == 'isPrime'" >{{prime}}</p>
+    </div>
+  </div>
