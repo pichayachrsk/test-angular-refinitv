@@ -4,7 +4,7 @@ import { TestComponent } from './test/test.component';
 import { TestScreenComponent } from './test-screen/test-screen.component';
 
 const routes: Routes = [
-  {path: 'test-1' ,component : TestComponent},
+  {path: 'test-search' ,component : TestComponent},
   {path: 'test-screen' ,component : TestScreenComponent}
 ];
 
